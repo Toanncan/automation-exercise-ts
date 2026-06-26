@@ -18,6 +18,13 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+
+    env:
+      ENV_NAME: ${{ secrets.ENV_NAME }}
+      DEV_BASE_URL: ${{ secrets.DEV_BASE_URL }}
+      DEV_USER_NAME: ${{ secrets.DEV_USER_NAME }}
+      DEV_USER_PASSWORD: ${{ secrets.DEV_USER_PASSWORD }}
+      
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
