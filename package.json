@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
-    "test:allure": "playwright test --reporter=allure-playwright",
+    "test:allure": "playwright test",
     "clean": "rimraf allure-results allure-report",
-    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report",
-    "test:clean": "npm run clean && playwright test --reporter=allure-playwright",
-    "test:all": "npm run clean && playwright test --reporter=allure-playwright && allure generate allure-results --clean -o allure-report && allure open allure-report"
+    "report:generate": "allure generate allure-results --clean -o allure-report",
+    "report:open": "allure open allure-report",
+    "report": "npm run report:generate && npm run report:open",
+    "test:clean": "npm run clean && npm test",
+    "test:all": "npm run test:clean && npm run report"
   },
   "keywords": [],
   "author": "",
