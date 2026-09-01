@@ -1,3 +1,3 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","555","Do not input user, password","Automation Exercise","2026-09-01","passed","2026-09-01","chromium","login.spec.ts","",""
-"","786","Login success","Automation Exercise","2026-09-01","passed","2026-09-01","chromium","login.spec.ts","",""
+"","707","Login success","Automation Exercise","2026-09-01","passed","2026-09-01","chromium","login.spec.ts","",""
+"","438","Do not input user, password","Automation Exercise","2026-09-01","passed","2026-09-01","chromium","login.spec.ts","",""
